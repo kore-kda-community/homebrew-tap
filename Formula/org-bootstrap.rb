@@ -5,13 +5,13 @@
 class OrgBootstrap < Formula
   desc "Org bootstrapper: create + audit + release pipeline for GitHub orgs"
   homepage "https://github.com/kore-kda-community/homebrew-tap-app"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kore-kda-community/releases/releases/download/v0.1.0/org-bootstrap_0.1.0_darwin_amd64.tar.gz"
-      sha256 "4f4d487f66e45e5f8e94226e35e7e39721e76393953fd286dd7db0941ec55a13"
+      url "https://github.com/kore-kda-community/releases/releases/download/v0.2.0/org-bootstrap_0.2.0_darwin_amd64.tar.gz"
+      sha256 "c8f49aa1669b2e381230e626c1e925c0112fd022e9bd70b2be04350c2bb96bd9"
 
       define_method(:install) do
         bin.install "org-bootstrap"
@@ -20,8 +20,8 @@ class OrgBootstrap < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kore-kda-community/releases/releases/download/v0.1.0/org-bootstrap_0.1.0_darwin_arm64.tar.gz"
-      sha256 "7766dc41535a800829e4d7154ddb32f90849588e9425430ee984300ee8ac7736"
+      url "https://github.com/kore-kda-community/releases/releases/download/v0.2.0/org-bootstrap_0.2.0_darwin_arm64.tar.gz"
+      sha256 "a20bfe0d2fabee08a3ef25777446123f506c4ec249c11f68eb17af43f66fe07c"
 
       define_method(:install) do
         bin.install "org-bootstrap"
@@ -33,8 +33,8 @@ class OrgBootstrap < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kore-kda-community/releases/releases/download/v0.1.0/org-bootstrap_0.1.0_linux_amd64.tar.gz"
-      sha256 "fae598c8e0ad260db0666bd7c0317564963e7daa9402f6be4c488b53b97f3d59"
+      url "https://github.com/kore-kda-community/releases/releases/download/v0.2.0/org-bootstrap_0.2.0_linux_amd64.tar.gz"
+      sha256 "bf76c8edbeedd07786fcc80360ec3404677a8e4d6cc99720867c73bc80fdc976"
       define_method(:install) do
         bin.install "org-bootstrap"
         bin.install "org-audit"
@@ -42,8 +42,8 @@ class OrgBootstrap < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kore-kda-community/releases/releases/download/v0.1.0/org-bootstrap_0.1.0_linux_arm64.tar.gz"
-      sha256 "69df84bc3a17ae345985e6887fadef9e19bd914b47efedb162b0a989c368b27f"
+      url "https://github.com/kore-kda-community/releases/releases/download/v0.2.0/org-bootstrap_0.2.0_linux_arm64.tar.gz"
+      sha256 "d65e89c7891b5d9bb735ff1a5ee90c383eddf2a820da28a6740405bae5eae1c1"
       define_method(:install) do
         bin.install "org-bootstrap"
         bin.install "org-audit"
